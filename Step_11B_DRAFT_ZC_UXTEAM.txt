@@ -1,0 +1,12 @@
+projection;
+use draft;
+
+define behavior for ZC_UXTEAM_5551 alias UXTeam
+use etag
+{
+  use create;
+  use update;
+  use delete;  // We are NOT projecting delete operation !!
+
+  use action setActive;
+}
